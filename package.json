@@ -1,0 +1,83 @@
+{
+  "name": "ai-runestone",
+  "version": "1.0.0",
+  "description": "🏺 Transform your AI from a panicky debugger into a wise architectural adventurer! A mystical refactoring quest system that psychologically conditions AIs to think strategically instead of reactively.",
+  "main": "dist/ai-runestone.js",
+  "types": "dist/ai-runestone.d.ts",
+  "bin": {
+    "ai-runestone": "dist/cli/runestone-cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "dev": "tsx src/cli/runestone-cli.ts",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:run": "vitest run",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "clean": "rimraf dist",
+    "prepublishOnly": "npm run clean && npm run build",
+    "quest": "tsx src/cli/runestone-cli.ts quest",
+    "analyze": "tsx src/cli/runestone-cli.ts analyze",
+    "classify": "tsx src/cli/runestone-cli.ts classify",
+    "status": "tsx src/cli/runestone-cli.ts status"
+  },
+  "keywords": [
+    "ai",
+    "refactoring",
+    "typescript",
+    "architectural",
+    "analysis",
+    "mystical",
+    "quest",
+    "angel",
+    "chimera",
+    "psychological",
+    "conditioning",
+    "strategic",
+    "hexagonal",
+    "clean-architecture"
+  ],
+  "author": "AI Runestone Contributors",
+  "license": "MIT",
+  "dependencies": {
+    "@swc/core": "^1.12.6",
+    "chalk": "^4.1.2",
+    "commander": "^12.0.0",
+    "fs-extra": "^11.2.0",
+    "glob": "^11.0.3",
+    "minimatch": "^9.0.0",
+    "ts-morph": "^20.0.0",
+    "typescript": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/commander": "^2.12.5",
+    "@types/fs-extra": "11.0.4",
+    "@types/minimatch": "^5.1.2",
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "@vitest/ui": "^1.0.4",
+    "eslint": "^8.54.0",
+    "rimraf": "^5.0.5",
+    "tsx": "^4.6.0",
+    "vitest": "^1.0.4"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertwaynevankirk/ai-runestone.git"
+  },
+  "bugs": {
+    "url": "https://github.com/robertwaynevankirk/ai-runestone/issues"
+  },
+  "homepage": "https://github.com/robertwaynevankirk/ai-runestone#readme"
+}
